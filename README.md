@@ -8,7 +8,7 @@ A collection of creative 3D text scroll animations built with CSS and JavaScript
 
 The animations are triggered by scroll position and create an immersive 3D experience using CSS transforms and custom JavaScript scroll handlers. Each demo demonstrates different approaches to creating engaging typographic animations for modern web experiences.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/10/Capture-decran-2025-10-09-a-13.42.13.png)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
