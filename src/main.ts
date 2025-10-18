@@ -1,18 +1,18 @@
-import "./cylindar/cylindar.css";
-import "./circle/circle.css";
-import "./tube/tube.css";
+import './cylinder/cylinder.css';
+import './circle/circle.css';
+import './tube/tube.css';
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Lenis from 'lenis';
 
-import { Cylindar } from "./cylindar/cylindar";
-import { Circle } from "./circle/circle";
-import { Tube } from "./tube/tube";
+import { Cylindar } from './cylinder/cylinder';
+import { Circle } from './circle/circle';
+import { Tube } from './tube/tube';
 
 class App {
   lenis: Lenis;
-  cylindar!: Cylindar;
+  cylinder!: Cylindar;
   circle!: Circle;
   tube!: Tube;
 
@@ -32,7 +32,7 @@ class App {
 
   // optional
   setupLenis(): void {
-    this.lenis.on("scroll", () => {
+    this.lenis.on('scroll', () => {
       ScrollTrigger.update();
     });
     gsap.ticker.add((time) => {
@@ -43,14 +43,14 @@ class App {
   }
 
   initAllEffects(): void {
-    this.cylindar = new Cylindar();
+    this.cylinder = new Cylindar();
     this.circle = new Circle();
     this.tube = new Tube();
   }
 
   addEventListeners(): void {
-    window.addEventListener("resize", () => {
-      this.cylindar.resize();
+    window.addEventListener('resize', () => {
+      this.cylinder.resize();
       this.circle.resize();
       this.tube.resize();
     });

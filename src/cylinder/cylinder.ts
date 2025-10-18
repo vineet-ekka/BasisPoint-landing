@@ -8,14 +8,14 @@ export class Cylindar {
   wrapper: HTMLElement;
 
   constructor() {
-    this.title = document.querySelector(".cylindar__title") as HTMLElement;
+    this.title = document.querySelector(".cylinder__title") as HTMLElement;
     this.textWrapper = document.querySelector(
-      ".cylindar__text__wrapper"
+      ".cylinder__text__wrapper"
     ) as HTMLElement;
     this.textItems = document.querySelectorAll(
-      ".cylindar__text__item"
+      ".cylinder__text__item"
     ) as NodeListOf<HTMLElement>;
-    this.wrapper = document.querySelector(".cylindar__wrapper") as HTMLElement;
+    this.wrapper = document.querySelector(".cylinder__wrapper") as HTMLElement;
     this.init();
   }
 

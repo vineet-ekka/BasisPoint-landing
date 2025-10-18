@@ -11,8 +11,8 @@
   --color-link-hover: #fff;
   --page-padding: 1.5rem;
   --section-padding: 3.2rem;
-  font-family: "Inter", ui-monospace, monospace;
-  font-size: 1.2rem;
+  font-family: 'Inter', ui-monospace, monospace;
+  font-size: 14px;
   letter-spacing: -0.05em;
   line-height: 1.1;
   font-weight: 500;
@@ -64,7 +64,7 @@ html.lenis body {
   .loading {
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: fixed;
       z-index: 10000;
     }
@@ -148,13 +148,13 @@ a {
   justify-items: start;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "title"
-    "back"
-    "archive"
-    "github"
-    "demos"
-    "tags"
-    "sponsor";
+    'title'
+    'back'
+    'archive'
+    'github'
+    'demos'
+    'tags'
+    'sponsor';
 
   #cdawrap {
     justify-self: start;
@@ -218,8 +218,8 @@ a {
     grid-template-rows: auto auto;
     align-content: space-between;
     grid-template-areas:
-      "title back github archive demos"
-      "tags tags tags sponsor sponsor";
+      'title back github archive demos'
+      'tags tags tags sponsor sponsor';
 
     .frame__tags {
       align-self: end;
@@ -258,25 +258,16 @@ a {
   align-items: center;
 
   & h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     text-align: center;
     word-break: break-word;
     font-weight: 600;
-
-    @media screen and (max-width: 768px) {
-      font-size: 2rem;
-    }
   }
 
-  & h2 {
-    font-size: 2rem;
+  & p {
     text-align: center;
     word-break: break-word;
     font-weight: 400;
-
-    @media screen and (max-width: 768px) {
-      font-size: 1.6rem;
-    }
   }
 }
 
@@ -404,7 +395,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
