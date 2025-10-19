@@ -12,7 +12,7 @@
   --color-link-hover: #fff;
   --page-padding: 1.5rem;
   --section-padding: 3.2rem;
-  font-family: 'area-normal', sans-serif;
+  font-family: "area-normal", sans-serif;
   font-size: 12px;
 }
 
@@ -76,11 +76,11 @@ a {
   justify-content: start;
   grid-template-columns: auto auto auto;
   grid-template-areas:
-    'title title title'
-    'back archive github'
-    'demos demos demos'
-    'tags tags tags'
-    'sponsor sponsor sponsor';
+    "title title title"
+    "back archive github"
+    "demos demos demos"
+    "tags tags tags"
+    "sponsor sponsor sponsor";
 
   #cdawrap {
     justify-self: start;
@@ -144,8 +144,8 @@ a {
     grid-template-rows: auto auto;
     align-content: space-between;
     grid-template-areas:
-      'title back github archive demos'
-      'tags tags tags sponsor sponsor';
+      "title back github archive demos"
+      "tags tags tags sponsor sponsor";
 
     .frame__tags {
       align-self: end;
@@ -169,6 +169,10 @@ a {
   @media screen and (max-width: 768px) {
     padding: 0 var(--page-padding);
     width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 120em;
   }
 }
 
@@ -322,7 +326,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
