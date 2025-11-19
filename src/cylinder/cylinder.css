@@ -27,7 +27,7 @@
 
 .cylinder__text__item {
   font-size: clamp(3rem, 9vw, 7rem);
-  font-family: 'rl-folklor', sans-serif;
+  font-family: 'DM Serif Text', serif;
   font-weight: 900;
   text-transform: uppercase;
   position: absolute;
